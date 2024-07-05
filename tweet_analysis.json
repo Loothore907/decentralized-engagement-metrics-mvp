@@ -1,0 +1,18 @@
+{
+  "total_relevant_tweets": 8,
+  "mentions": {
+    "@jup_dao": 0,
+    "@JupiterExchange": 0,
+    "@weremeow": 8
+  },
+  "keywords": {
+    "Jupiter": 1,
+    "J4J": 2,
+    "PPP": 2
+  },
+  "hashtags": {
+    "Jupiter": 0,
+    "J4J": 2,
+    "PPP": 1
+  }
+}

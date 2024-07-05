@@ -1,0 +1,353 @@
+[
+  {
+    "in_reply_to_user_id": "17194296",
+    "public_metrics": {
+      "retweet_count": 0,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 22
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 0,
+          "end": 9,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ],
+      "hashtags": [
+        {
+          "start": 96,
+          "end": 100,
+          "tag": "J4J"
+        },
+        {
+          "start": 101,
+          "end": 105,
+          "tag": "PPP"
+        }
+      ],
+      "annotations": [
+        {
+          "start": 97,
+          "end": 99,
+          "probability": 0.5538,
+          "type": "Other",
+          "normalized_text": "J4J"
+        },
+        {
+          "start": 102,
+          "end": 104,
+          "probability": 0.524,
+          "type": "Organization",
+          "normalized_text": "PPP"
+        }
+      ]
+    },
+    "text": "@weremeow I've felt the pain of being someone's exit liquidity...That's why I follow a cat-god!\n#J4J\n#PPP",
+    "referenced_tweets": [
+      {
+        "type": "replied_to",
+        "id": "1798883409718399425"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1806393623887638908"
+    ],
+    "id": "1806393623887638908",
+    "created_at": "2024-06-27T18:26:15.000Z",
+    "author_id": "199173175"
+  },
+  {
+    "public_metrics": {
+      "retweet_count": 1037,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 0
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 3,
+          "end": 12,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ],
+      "annotations": [
+        {
+          "start": 14,
+          "end": 16,
+          "probability": 0.3685,
+          "type": "Organization",
+          "normalized_text": "PVP"
+        },
+        {
+          "start": 91,
+          "end": 93,
+          "probability": 0.3965,
+          "type": "Other",
+          "normalized_text": "PVP"
+        }
+      ]
+    },
+    "text": "RT @weremeow: PVP - PPP\n\nOne of the most important things for me is to shift crypto from a PVP into a PPP mindset.\n\nThe difference:\n- PPP (\u2026",
+    "referenced_tweets": [
+      {
+        "type": "retweeted",
+        "id": "1798883409718399425"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1806393227442065741"
+    ],
+    "id": "1806393227442065741",
+    "created_at": "2024-06-27T18:24:41.000Z",
+    "author_id": "199173175"
+  },
+  {
+    "in_reply_to_user_id": "17194296",
+    "public_metrics": {
+      "retweet_count": 0,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 3
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 0,
+          "end": 9,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ]
+    },
+    "text": "@weremeow I'm in!\n\nAyMasAonRrJbSYx5wQXP2agUrgfk9b7nDh1hKWMp2wX6",
+    "referenced_tweets": [
+      {
+        "type": "replied_to",
+        "id": "1805977697404776874"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1806243836760674414"
+    ],
+    "id": "1806243836760674414",
+    "created_at": "2024-06-27T08:31:03.000Z",
+    "author_id": "199173175"
+  },
+  {
+    "in_reply_to_user_id": "17194296",
+    "public_metrics": {
+      "retweet_count": 0,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 30
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 0,
+          "end": 9,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ],
+      "hashtags": [
+        {
+          "start": 247,
+          "end": 251,
+          "tag": "J4J"
+        }
+      ],
+      "annotations": [
+        {
+          "start": 36,
+          "end": 45,
+          "probability": 0.7247,
+          "type": "Other",
+          "normalized_text": "Scooby Doo"
+        },
+        {
+          "start": 248,
+          "end": 250,
+          "probability": 0.7274,
+          "type": "Other",
+          "normalized_text": "J4J"
+        }
+      ]
+    },
+    "text": "@weremeow I think you found the Way Scooby Doo! \n\nYou tried to join social groups...and by their rules and definitions you didn't fit in...but when YOU are the social group that others want to join, they will adapt to your rules and definitions. \n#J4J",
+    "referenced_tweets": [
+      {
+        "type": "replied_to",
+        "id": "1804962321259008178"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1806243416613024105"
+    ],
+    "id": "1806243416613024105",
+    "created_at": "2024-06-27T08:29:23.000Z",
+    "author_id": "199173175"
+  },
+  {
+    "public_metrics": {
+      "retweet_count": 17,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 0
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 3,
+          "end": 12,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ]
+    },
+    "text": "RT @weremeow: And the answer is, interestingly, that there is no such thing. You can never truly be yourself, just like you can never truly\u2026",
+    "referenced_tweets": [
+      {
+        "type": "retweeted",
+        "id": "1804962321259008178"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1806242743079076051"
+    ],
+    "id": "1806242743079076051",
+    "created_at": "2024-06-27T08:26:42.000Z",
+    "author_id": "199173175"
+  },
+  {
+    "public_metrics": {
+      "retweet_count": 120,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 0
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 3,
+          "end": 12,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ]
+    },
+    "text": "RT @weremeow: Indeed, what was extremely touching to me personally was the willingness of the team to take the 30% cut, lock the cliff and\u2026",
+    "referenced_tweets": [
+      {
+        "type": "retweeted",
+        "id": "1803820810957922698"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1803872871523168457"
+    ],
+    "id": "1803872871523168457",
+    "created_at": "2024-06-20T19:29:41.000Z",
+    "author_id": "199173175"
+  },
+  {
+    "in_reply_to_user_id": "17194296",
+    "public_metrics": {
+      "retweet_count": 0,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 25
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 0,
+          "end": 9,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ]
+    },
+    "text": "@weremeow The space cat with bull semen running through his veins NEVER stays at home",
+    "referenced_tweets": [
+      {
+        "type": "replied_to",
+        "id": "1802235257048949009"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1802236292920672454"
+    ],
+    "id": "1802236292920672454",
+    "created_at": "2024-06-16T07:06:30.000Z",
+    "author_id": "199173175"
+  },
+  {
+    "public_metrics": {
+      "retweet_count": 19,
+      "reply_count": 0,
+      "like_count": 0,
+      "quote_count": 0,
+      "bookmark_count": 0,
+      "impression_count": 0
+    },
+    "entities": {
+      "mentions": [
+        {
+          "start": 3,
+          "end": 12,
+          "username": "weremeow",
+          "id": "17194296"
+        }
+      ],
+      "annotations": [
+        {
+          "start": 100,
+          "end": 105,
+          "probability": 0.8814,
+          "type": "Other",
+          "normalized_text": "crypto"
+        },
+        {
+          "start": 111,
+          "end": 117,
+          "probability": 0.8463,
+          "type": "Other",
+          "normalized_text": "Jupiter"
+        }
+      ]
+    },
+    "text": "RT @weremeow: I have an intense backlog of social experiments to run that I think could be good for crypto and Jupiter, but of course might\u2026",
+    "referenced_tweets": [
+      {
+        "type": "retweeted",
+        "id": "1802235257048949009"
+      }
+    ],
+    "edit_history_tweet_ids": [
+      "1802235548717011161"
+    ],
+    "id": "1802235548717011161",
+    "created_at": "2024-06-16T07:03:33.000Z",
+    "author_id": "199173175"
+  }
+]

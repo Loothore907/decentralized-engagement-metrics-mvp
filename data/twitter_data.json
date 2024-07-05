@@ -1,0 +1,716 @@
+[
+  {
+    "@emfr2u": {
+      "data": [
+        {
+          "text": "Before @deficarrot, DeFi yield was a headache.\n\nManaging multiple protocols? Exhausting.\nWithout it? Sub-optimal gains.\n\nSimplify DeFi with one token. Choose Carrot \ud83e\udd55\n\nShoutout @drip_haus for the hookup!\n\nhttps://t.co/DGnVqhMnPO",
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 7,
+                "end": 18,
+                "username": "DeFiCarrot",
+                "id": "1769741787956912128"
+              },
+              {
+                "start": 177,
+                "end": 187,
+                "username": "drip_haus",
+                "id": "1512518742051237893"
+              }
+            ],
+            "urls": [
+              {
+                "start": 205,
+                "end": 228,
+                "url": "https://t.co/DGnVqhMnPO",
+                "expanded_url": "https://drip.deficarrot.com/",
+                "display_url": "drip.deficarrot.com",
+                "status": 200,
+                "unwound_url": "https://drip.deficarrot.com/"
+              }
+            ],
+            "annotations": [
+              {
+                "start": 20,
+                "end": 23,
+                "probability": 0.5563,
+                "type": "Other",
+                "normalized_text": "DeFi"
+              },
+              {
+                "start": 130,
+                "end": 133,
+                "probability": 0.5407,
+                "type": "Other",
+                "normalized_text": "DeFi"
+              },
+              {
+                "start": 158,
+                "end": 163,
+                "probability": 0.5649,
+                "type": "Other",
+                "normalized_text": "Carrot"
+              }
+            ]
+          },
+          "created_at": "2024-07-03T03:05:34.000Z",
+          "id": "1808336253991244265",
+          "edit_history_tweet_ids": [
+            "1808336253991244265"
+          ],
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 8
+          }
+        },
+        {
+          "text": "\ud83c\udfc6 RARE LOCKED \ud83c\udfc6\n\nI\u2019m guaranteed a \ud83d\udfe8Rare from the next @drip_haus featured artist! \ud83d\udd25",
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 54,
+                "end": 64,
+                "username": "drip_haus",
+                "id": "1512518742051237893"
+              }
+            ]
+          },
+          "created_at": "2024-07-01T23:41:52.000Z",
+          "id": "1807922603493077373",
+          "edit_history_tweet_ids": [
+            "1807922603493077373"
+          ],
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 21
+          }
+        },
+        {
+          "text": "@0xDonnaXo LOVE IT! \nTouchin Grass with my lil green gigabud! https://t.co/OXwBjcaHFA",
+          "referenced_tweets": [
+            {
+              "type": "replied_to",
+              "id": "1806753370595586363"
+            }
+          ],
+          "in_reply_to_user_id": "1390870886346104832",
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 0,
+                "end": 10,
+                "username": "0xDonnaXo",
+                "id": "1390870886346104832"
+              }
+            ],
+            "urls": [
+              {
+                "start": 62,
+                "end": 85,
+                "url": "https://t.co/OXwBjcaHFA",
+                "expanded_url": "https://twitter.com/emfr2u/status/1806764323144130800/photo/1",
+                "display_url": "pic.twitter.com/OXwBjcaHFA",
+                "media_key": "3_1806764036325089280"
+              }
+            ],
+            "annotations": [
+              {
+                "start": 21,
+                "end": 33,
+                "probability": 0.6288,
+                "type": "Other",
+                "normalized_text": "Touchin Grass"
+              }
+            ]
+          },
+          "created_at": "2024-06-28T18:59:17.000Z",
+          "id": "1806764323144130800",
+          "edit_history_tweet_ids": [
+            "1806764323144130800"
+          ],
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 3
+          }
+        },
+        {
+          "text": "GOT IT!!!!!!\nIs it because I'm a stoner? yup!\nIs it because I love @getgrass_io? yup!\nIs it because i have unlimited internet? YUUUUUUP!!!! https://t.co/OqP6SPQeeL",
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 67,
+                "end": 79,
+                "username": "getgrass_io",
+                "id": "1638214841088221184"
+              }
+            ],
+            "urls": [
+              {
+                "start": 140,
+                "end": 163,
+                "url": "https://t.co/OqP6SPQeeL",
+                "expanded_url": "https://twitter.com/emfr2u/status/1806397408143876370/photo/1",
+                "display_url": "pic.twitter.com/OqP6SPQeeL",
+                "media_key": "3_1806396799156113409"
+              }
+            ]
+          },
+          "created_at": "2024-06-27T18:41:17.000Z",
+          "id": "1806397408143876370",
+          "edit_history_tweet_ids": [
+            "1806397408143876370"
+          ],
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 20
+          }
+        },
+        {
+          "text": "Go-Go Gadget Holdium!\n\nhttps://t.co/HuzNwGTiVW",
+          "author_id": "199173175",
+          "created_at": "2024-06-27T18:30:10.000Z",
+          "id": "1806394609624617407",
+          "edit_history_tweet_ids": [
+            "1806394609624617407"
+          ],
+          "entities": {
+            "urls": [
+              {
+                "start": 23,
+                "end": 46,
+                "url": "https://t.co/HuzNwGTiVW",
+                "expanded_url": "https://app.holdium.xyz/$/rlBZnbvZ",
+                "display_url": "app.holdium.xyz/$/rlBZnbvZ",
+                "images": [
+                  {
+                    "url": "https://pbs.twimg.com/news_img/1808536889693253632/fQyd4mcs?format=jpg&name=orig",
+                    "width": 1200,
+                    "height": 630
+                  },
+                  {
+                    "url": "https://pbs.twimg.com/news_img/1808536889693253632/fQyd4mcs?format=jpg&name=150x150",
+                    "width": 150,
+                    "height": 150
+                  }
+                ],
+                "status": 200,
+                "title": "Holdium",
+                "description": "The one token you never sell",
+                "unwound_url": "https://app.holdium.xyz/"
+              }
+            ],
+            "annotations": [
+              {
+                "start": 6,
+                "end": 19,
+                "probability": 0.5774,
+                "type": "Other",
+                "normalized_text": "Gadget Holdium"
+              }
+            ]
+          },
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 13
+          }
+        },
+        {
+          "text": "@airforcetuanNFT @mallow__art Love it! \nToo broke to bid on it tho!",
+          "referenced_tweets": [
+            {
+              "type": "replied_to",
+              "id": "1806393604929360098"
+            }
+          ],
+          "in_reply_to_user_id": "1469530363395710980",
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 0,
+                "end": 16,
+                "username": "airforcetuanNFT",
+                "id": "1469530363395710980"
+              },
+              {
+                "start": 17,
+                "end": 29,
+                "username": "mallow__art",
+                "id": "1511807213404368913"
+              }
+            ]
+          },
+          "created_at": "2024-06-27T18:27:52.000Z",
+          "id": "1806394029455855650",
+          "edit_history_tweet_ids": [
+            "1806394029455855650"
+          ],
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 43
+          }
+        },
+        {
+          "text": "@weremeow I've felt the pain of being someone's exit liquidity...That's why I follow a cat-god!\n#J4J\n#PPP",
+          "referenced_tweets": [
+            {
+              "type": "replied_to",
+              "id": "1798883409718399425"
+            }
+          ],
+          "in_reply_to_user_id": "17194296",
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 0,
+                "end": 9,
+                "username": "weremeow",
+                "id": "17194296"
+              }
+            ],
+            "hashtags": [
+              {
+                "start": 96,
+                "end": 100,
+                "tag": "J4J"
+              },
+              {
+                "start": 101,
+                "end": 105,
+                "tag": "PPP"
+              }
+            ],
+            "annotations": [
+              {
+                "start": 97,
+                "end": 99,
+                "probability": 0.5538,
+                "type": "Other",
+                "normalized_text": "J4J"
+              },
+              {
+                "start": 102,
+                "end": 104,
+                "probability": 0.524,
+                "type": "Organization",
+                "normalized_text": "PPP"
+              }
+            ]
+          },
+          "created_at": "2024-06-27T18:26:15.000Z",
+          "id": "1806393623887638908",
+          "edit_history_tweet_ids": [
+            "1806393623887638908"
+          ],
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 22
+          }
+        },
+        {
+          "text": "RT @weremeow: PVP - PPP\n\nOne of the most important things for me is to shift crypto from a PVP into a PPP mindset.\n\nThe difference:\n- PPP (\u2026",
+          "referenced_tweets": [
+            {
+              "type": "retweeted",
+              "id": "1798883409718399425"
+            }
+          ],
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 3,
+                "end": 12,
+                "username": "weremeow",
+                "id": "17194296"
+              }
+            ],
+            "annotations": [
+              {
+                "start": 14,
+                "end": 16,
+                "probability": 0.3685,
+                "type": "Organization",
+                "normalized_text": "PVP"
+              },
+              {
+                "start": 91,
+                "end": 93,
+                "probability": 0.3965,
+                "type": "Other",
+                "normalized_text": "PVP"
+              }
+            ]
+          },
+          "created_at": "2024-06-27T18:24:41.000Z",
+          "id": "1806393227442065741",
+          "edit_history_tweet_ids": [
+            "1806393227442065741"
+          ],
+          "public_metrics": {
+            "retweet_count": 1029,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 0
+          }
+        },
+        {
+          "text": "@solanapoet lol how about for \"35\" AND \"36\"? https://t.co/XycDFLC156",
+          "referenced_tweets": [
+            {
+              "type": "replied_to",
+              "id": "1806384889480323184"
+            }
+          ],
+          "in_reply_to_user_id": "1464400811300212736",
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 0,
+                "end": 11,
+                "username": "solanapoet",
+                "id": "1464400811300212736"
+              }
+            ],
+            "urls": [
+              {
+                "start": 45,
+                "end": 68,
+                "url": "https://t.co/XycDFLC156",
+                "expanded_url": "https://twitter.com/emfr2u/status/1806389707263381848/photo/1",
+                "display_url": "pic.twitter.com/XycDFLC156",
+                "media_key": "3_1806389518687465472"
+              }
+            ]
+          },
+          "created_at": "2024-06-27T18:10:41.000Z",
+          "id": "1806389707263381848",
+          "edit_history_tweet_ids": [
+            "1806389707263381848"
+          ],
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 103
+          }
+        },
+        {
+          "text": "RT @solanapoet: mint is live https://t.co/Lbz4FPa5q9",
+          "referenced_tweets": [
+            {
+              "type": "retweeted",
+              "id": "1806359173891772479"
+            }
+          ],
+          "author_id": "199173175",
+          "entities": {
+            "mentions": [
+              {
+                "start": 3,
+                "end": 14,
+                "username": "solanapoet",
+                "id": "1464400811300212736"
+              }
+            ],
+            "urls": [
+              {
+                "start": 29,
+                "end": 52,
+                "url": "https://t.co/Lbz4FPa5q9",
+                "expanded_url": "https://twitter.com/solanapoet/status/1806359173891772479/photo/1",
+                "display_url": "pic.twitter.com/Lbz4FPa5q9",
+                "media_key": "3_1806359161753481216"
+              }
+            ],
+            "annotations": [
+              {
+                "start": 16,
+                "end": 19,
+                "probability": 0.5489,
+                "type": "Other",
+                "normalized_text": "mint"
+              }
+            ]
+          },
+          "created_at": "2024-06-27T16:38:00.000Z",
+          "id": "1806366381820236060",
+          "edit_history_tweet_ids": [
+            "1806366381820236060"
+          ],
+          "public_metrics": {
+            "retweet_count": 32,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 0
+          }
+        }
+      ],
+      "includes": {
+        "users": [
+          {
+            "id": "199173175",
+            "name": "Loothore907",
+            "username": "emfr2u"
+          },
+          {
+            "id": "1769741787956912128",
+            "name": "Carrot \ud83e\udd55",
+            "username": "DeFiCarrot"
+          },
+          {
+            "id": "1512518742051237893",
+            "name": "DRiP \ud83d\udca7",
+            "username": "drip_haus"
+          },
+          {
+            "id": "1390870886346104832",
+            "name": "DonnaG (grass/acc)",
+            "username": "0xDonnaXo"
+          },
+          {
+            "id": "1638214841088221184",
+            "name": "Grass",
+            "username": "getgrass_io"
+          },
+          {
+            "id": "1469530363395710980",
+            "name": "Airforcetuan \ud83e\uddfb",
+            "username": "airforcetuanNFT"
+          },
+          {
+            "id": "1511807213404368913",
+            "name": "mallow.",
+            "username": "mallow__art"
+          },
+          {
+            "id": "17194296",
+            "name": "meow",
+            "username": "weremeow"
+          },
+          {
+            "id": "1464400811300212736",
+            "name": "degen poet",
+            "username": "solanapoet"
+          }
+        ],
+        "tweets": [
+          {
+            "text": "#GIGABUDS https://t.co/3kIxKBj9Bp",
+            "author_id": "1390870886346104832",
+            "created_at": "2024-06-28T18:15:46.000Z",
+            "entities": {
+              "hashtags": [
+                {
+                  "start": 0,
+                  "end": 9,
+                  "tag": "GIGABUDS"
+                }
+              ],
+              "urls": [
+                {
+                  "start": 10,
+                  "end": 33,
+                  "url": "https://t.co/3kIxKBj9Bp",
+                  "expanded_url": "https://twitter.com/0xDonnaXo/status/1806753370595586363/photo/1",
+                  "display_url": "pic.twitter.com/3kIxKBj9Bp",
+                  "media_key": "3_1806753367974150144"
+                }
+              ]
+            },
+            "id": "1806753370595586363",
+            "edit_history_tweet_ids": [
+              "1806753370595586363"
+            ],
+            "public_metrics": {
+              "retweet_count": 51,
+              "reply_count": 121,
+              "like_count": 277,
+              "quote_count": 9,
+              "bookmark_count": 6,
+              "impression_count": 18675
+            }
+          },
+          {
+            "text": "SORA\nAvailable on @mallow__art \n1/1\n1.69 SOL\n\ud83d\udd17 \u2b07\ufe0f https://t.co/hYRHi3LOYI",
+            "author_id": "1469530363395710980",
+            "entities": {
+              "mentions": [
+                {
+                  "start": 18,
+                  "end": 30,
+                  "username": "mallow__art",
+                  "id": "1511807213404368913"
+                }
+              ],
+              "urls": [
+                {
+                  "start": 50,
+                  "end": 73,
+                  "url": "https://t.co/hYRHi3LOYI",
+                  "expanded_url": "https://twitter.com/airforcetuanNFT/status/1806393604929360098/photo/1",
+                  "display_url": "pic.twitter.com/hYRHi3LOYI",
+                  "media_key": "3_1806393598856118272"
+                }
+              ]
+            },
+            "created_at": "2024-06-27T18:26:11.000Z",
+            "id": "1806393604929360098",
+            "edit_history_tweet_ids": [
+              "1806393604929360098"
+            ],
+            "public_metrics": {
+              "retweet_count": 3,
+              "reply_count": 3,
+              "like_count": 12,
+              "quote_count": 0,
+              "bookmark_count": 0,
+              "impression_count": 356
+            }
+          },
+          {
+            "text": "PVP - PPP\n\nOne of the most important things for me is to shift crypto from a PVP into a PPP mindset.\n\nThe difference:\n- PPP (Player pump player) communities wants the last person in to win\n- PVP (Player vs player) communities wants the last person in to be their exit\n\nPPP are by\u2026 https://t.co/WNoNpBxoVD",
+            "author_id": "17194296",
+            "created_at": "2024-06-07T01:03:21.000Z",
+            "id": "1798883409718399425",
+            "edit_history_tweet_ids": [
+              "1798883409718399425"
+            ],
+            "entities": {
+              "urls": [
+                {
+                  "start": 281,
+                  "end": 304,
+                  "url": "https://t.co/WNoNpBxoVD",
+                  "expanded_url": "https://twitter.com/i/web/status/1798883409718399425",
+                  "display_url": "x.com/i/web/status/1\u2026"
+                }
+              ]
+            },
+            "public_metrics": {
+              "retweet_count": 1029,
+              "reply_count": 543,
+              "like_count": 3035,
+              "quote_count": 225,
+              "bookmark_count": 471,
+              "impression_count": 928632
+            }
+          },
+          {
+            "text": "can i airdrop bitcoin inscriptions? like say ur holding an inscription that ends in \u201c69\u201d who knows, this is fun \ud83d\udc40",
+            "author_id": "1464400811300212736",
+            "created_at": "2024-06-27T17:51:33.000Z",
+            "id": "1806384889480323184",
+            "edit_history_tweet_ids": [
+              "1806384889480323184"
+            ],
+            "public_metrics": {
+              "retweet_count": 0,
+              "reply_count": 12,
+              "like_count": 38,
+              "quote_count": 0,
+              "bookmark_count": 0,
+              "impression_count": 1905
+            },
+            "entities": {
+              "annotations": [
+                {
+                  "start": 14,
+                  "end": 20,
+                  "probability": 0.8915,
+                  "type": "Other",
+                  "normalized_text": "bitcoin"
+                }
+              ]
+            }
+          },
+          {
+            "text": "mint is live https://t.co/Lbz4FPa5q9",
+            "author_id": "1464400811300212736",
+            "created_at": "2024-06-27T16:09:22.000Z",
+            "id": "1806359173891772479",
+            "edit_history_tweet_ids": [
+              "1806359173891772479"
+            ],
+            "entities": {
+              "urls": [
+                {
+                  "start": 13,
+                  "end": 36,
+                  "url": "https://t.co/Lbz4FPa5q9",
+                  "expanded_url": "https://twitter.com/solanapoet/status/1806359173891772479/photo/1",
+                  "display_url": "pic.twitter.com/Lbz4FPa5q9",
+                  "media_key": "3_1806359161753481216"
+                }
+              ],
+              "annotations": [
+                {
+                  "start": 0,
+                  "end": 3,
+                  "probability": 0.7406,
+                  "type": "Other",
+                  "normalized_text": "mint"
+                }
+              ]
+            },
+            "public_metrics": {
+              "retweet_count": 32,
+              "reply_count": 26,
+              "like_count": 257,
+              "quote_count": 3,
+              "bookmark_count": 14,
+              "impression_count": 12595
+            }
+          }
+        ]
+      },
+      "meta": {
+        "result_count": 10,
+        "newest_id": "1808336253991244265",
+        "oldest_id": "1806366381820236060",
+        "next_token": "7140dibdnow9c7btw4azvkcw7645mvtjrx9jqsmtijkts"
+      }
+    }
+  }
+]
