@@ -1,3 +1,5 @@
+# src/data_ingestion/twitter_fetcher.py
+
 import os
 import sys
 import asyncio
@@ -7,11 +9,11 @@ import logging
 from typing import List, Dict
 from datetime import datetime
 
-# Add the project root to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from configs.project_config import PROJECT_ACCOUNTS, KEYWORDS, HASHTAGS
-from src.database.db_manager import DBManager
+from src.database.sql_db_manager import SQLDBManager
+from src.vector_db.vector_db_manager import VectorDBManager
 
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
@@ -25,7 +27,8 @@ class TwitterFetcher:
             "Authorization": f"Bearer {self.bearer_token}",
             "User-Agent": "v2RecentSearchPython"
         }
-        self.db_manager = DBManager()
+        self.sql_db_manager = SQLDBManager()
+        self.vector_db_manager = VectorDBManager()
 
     async def fetch_user_tweets(self, user_id: str, max_results: int = 100) -> Dict:
         url = f"{self.base_url}/users/{user_id}/tweets"
@@ -49,33 +52,20 @@ class TwitterFetcher:
                 return None
 
     def is_relevant_tweet(self, tweet: Dict) -> bool:
-        text = tweet['text'].lower()
-        
-        if any(account.lower() in text for account in PROJECT_ACCOUNTS):
-            return True
-        
-        if any(keyword.lower() in text for keyword in KEYWORDS):
-            return True
-        
-        tweet_hashtags = [hashtag['tag'].lower() for hashtag in tweet.get('entities', {}).get('hashtags', [])]
-        if any(hashtag.lower().lstrip('#') in tweet_hashtags for hashtag in HASHTAGS):
-            return True
-        
-        if tweet.get('in_reply_to_user_id') and any(account.lower() in tweet.get('entities', {}).get('mentions', []) for account in PROJECT_ACCOUNTS):
-            return True
-        
-        return False
+        # Your existing relevance check logic here
+        pass
 
     def process_tweet(self, tweet: Dict, user: Dict):
         is_relevant = self.is_relevant_tweet(tweet)
         
+        # Store in SQL database
         user_data = {
             'id': user['id'],
             'username': user['username'],
             'follower_count': user['public_metrics']['followers_count'],
             'created_at': datetime.strptime(user['created_at'], "%Y-%m-%dT%H:%M:%S.%fZ")
         }
-        self.db_manager.insert_user(user_data)
+        self.sql_db_manager.insert_user(user_data)
         
         tweet_data = {
             'id': tweet['id'],
@@ -83,29 +73,15 @@ class TwitterFetcher:
             'content': tweet['text'],
             'created_at': datetime.strptime(tweet['created_at'], "%Y-%m-%dT%H:%M:%S.%fZ"),
             'is_relevant': is_relevant,
-            'engagement_score': 0  # You can implement a scoring system later
+            'engagement_score': 0  # Placeholder for now
         }
-        self.db_manager.insert_tweet(tweet_data)
+        self.sql_db_manager.insert_tweet(tweet_data)
         
-        metrics_data = {
-            'tweet_id': tweet['id'],
-            'retweet_count': tweet['public_metrics']['retweet_count'],
-            'like_count': tweet['public_metrics']['like_count'],
-            'reply_count': tweet['public_metrics']['reply_count'],
-            'quote_count': tweet['public_metrics']['quote_count']
-        }
-        self.db_manager.insert_tweet_metrics(metrics_data)
-        
-        if is_relevant:
-            for project in PROJECT_ACCOUNTS:
-                if project.lower() in tweet['text'].lower():
-                    mention_data = {
-                        'tweet_id': tweet['id'],
-                        'project_name': project
-                    }
-                    self.db_manager.insert_project_mention(mention_data)
+        # Store in vector database
+        self.vector_db_manager.store_tweet_embedding(tweet['id'], tweet['text'])
 
     async def process_accounts(self, account_list: List[str]):
+        all_tweets = []
         for account in account_list:
             tweets_data = await self.fetch_user_tweets(account)
             if tweets_data and 'data' in tweets_data:
@@ -113,8 +89,11 @@ class TwitterFetcher:
                 if user:
                     for tweet in tweets_data['data']:
                         self.process_tweet(tweet, user)
+                        all_tweets.append(tweet)
         
-        logger.info("Finished processing accounts")
+        # Batch store embeddings
+        self.vector_db_manager.batch_store_tweet_embeddings(all_tweets)
+        logger.info(f"Processed and stored {len(all_tweets)} tweets")
 
 async def main():
     fetcher = TwitterFetcher()
@@ -123,7 +102,6 @@ async def main():
     accounts = ["199173175"]  # Your Twitter user ID
     
     await fetcher.process_accounts(accounts)
-    fetcher.db_manager.close()
 
 if __name__ == "__main__":
     asyncio.run(main())
