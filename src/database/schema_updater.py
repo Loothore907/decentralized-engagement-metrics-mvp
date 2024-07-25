@@ -39,8 +39,7 @@ def update_schema():
                 twitter_id BIGINT REFERENCES user_accounts(twitter_id),
                 wallet_address VARCHAR(255) NOT NULL,
                 chain VARCHAR(50) DEFAULT 'solana',
-                is_primary BOOLEAN DEFAULT FALSE,
-                UNIQUE (twitter_id, wallet_address)
+                is_primary BOOLEAN DEFAULT FALSE
             )
             """,
             """
@@ -55,6 +54,20 @@ def update_schema():
 
         for command in commands:
             cur.execute(command)
+
+        # Add unique constraint to wallet_address if it doesn't exist
+        cur.execute("""
+        DO $$
+        BEGIN
+            IF NOT EXISTS (
+                SELECT 1 FROM pg_constraint 
+                WHERE conname = 'unique_wallet_address' AND conrelid = 'user_wallets'::regclass
+            ) THEN
+                ALTER TABLE user_wallets ADD CONSTRAINT unique_wallet_address UNIQUE (wallet_address);
+            END IF;
+        END
+        $$;
+        """)
 
         conn.commit()
         logger.info("Database schema updated successfully")

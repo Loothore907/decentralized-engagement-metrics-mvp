@@ -1,14 +1,31 @@
-# /home/loothore907/decentralized-engagement-metrics-mvp/src/vector_db/vector_db_manager.py
+# src/vector_db/vector_db_manager.py
 
 import os
 from dotenv import load_dotenv
 from pinecone import Pinecone
 from sentence_transformers import SentenceTransformer
 import logging
+import time
+from functools import wraps
 
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+def retry_on_error(max_retries=3, delay=1):
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            for attempt in range(max_retries):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    if attempt == max_retries - 1:
+                        raise
+                    logger.warning(f"Vector DB operation failed. Retrying in {delay} seconds. Error: {e}")
+                    time.sleep(delay)
+        return wrapper
+    return decorator
 
 class VectorDBManager:
     def __init__(self):
@@ -21,7 +38,6 @@ class VectorDBManager:
 
         logger.info(f"Initializing Pinecone with environment: {self.environment}")
         
-        # Initialize Pinecone
         try:
             self.pc = Pinecone(api_key=self.api_key)
             logger.info("Pinecone initialized successfully")
@@ -29,7 +45,6 @@ class VectorDBManager:
             logger.error(f"Failed to initialize Pinecone: {e}")
             raise
 
-        # Connect to existing Pinecone index
         try:
             self.index = self.pc.Index(self.index_name)
             logger.info(f"Successfully connected to Pinecone index: {self.index_name}")
@@ -37,7 +52,6 @@ class VectorDBManager:
             logger.error(f"Failed to connect to Pinecone index: {str(e)}")
             raise
 
-        # Load the embedding model
         try:
             self.model = SentenceTransformer('all-MiniLM-L6-v2')
             logger.info("Loaded SentenceTransformer model: all-MiniLM-L6-v2")
@@ -48,6 +62,7 @@ class VectorDBManager:
     def generate_embedding(self, text):
         return self.model.encode(text).tolist()
 
+    @retry_on_error()
     def store_tweet_embedding(self, tweet_id, tweet_text):
         try:
             embedding = self.generate_embedding(tweet_text)
@@ -55,7 +70,9 @@ class VectorDBManager:
             logger.info(f"Stored embedding for tweet {tweet_id}")
         except Exception as e:
             logger.error(f"Error storing embedding for tweet {tweet_id}: {e}")
+            raise
 
+    @retry_on_error()
     def find_similar_tweets(self, query_text, top_k=5):
         try:
             query_embedding = self.generate_embedding(query_text)
@@ -64,8 +81,9 @@ class VectorDBManager:
             return results
         except Exception as e:
             logger.error(f"Error finding similar tweets: {e}")
-            return None
+            raise
 
+    @retry_on_error()
     def batch_store_tweet_embeddings(self, tweets):
         try:
             batch = [(tweet['id'], self.generate_embedding(tweet['text'])) for tweet in tweets]
@@ -73,24 +91,34 @@ class VectorDBManager:
             logger.info(f"Stored embeddings for {len(tweets)} tweets in batch")
         except Exception as e:
             logger.error(f"Error batch storing tweet embeddings: {e}")
+            raise
 
-# Usage example
-if __name__ == "__main__":
-    try:
-        vector_db = VectorDBManager()
-        
-        # Store a single tweet
-        vector_db.store_tweet_embedding("tweet_id_123", "This is a sample tweet about decentralized finance.")
-        
-        # Find similar tweets
-        similar_tweets = vector_db.find_similar_tweets("What are the benefits of DeFi?")
-        print("Similar tweets:", similar_tweets)
-        
-        # Batch store tweets
-        sample_tweets = [
-            {"id": "tweet_1", "text": "Exploring the potential of blockchain technology in finance."},
-            {"id": "tweet_2", "text": "How smart contracts are revolutionizing traditional banking."}
-        ]
-        vector_db.batch_store_tweet_embeddings(sample_tweets)
-    except Exception as e:
-        logger.error(f"An error occurred: {e}")
+    @retry_on_error()
+    def batch_find_similar_tweets(self, query_texts, top_k=5):
+        try:
+            query_embeddings = [self.generate_embedding(text) for text in query_texts]
+            results = self.index.query(vector=query_embeddings, top_k=top_k, include_metadata=True)
+            logger.info(f"Found similar tweets for {len(query_texts)} queries")
+            return results
+        except Exception as e:
+            logger.error(f"Error batch finding similar tweets: {e}")
+            raise
+
+    def delete_tweet_embedding(self, tweet_id):
+        try:
+            self.index.delete(ids=[tweet_id])
+            logger.info(f"Deleted embedding for tweet {tweet_id}")
+        except Exception as e:
+            logger.error(f"Error deleting embedding for tweet {tweet_id}: {e}")
+            raise
+
+    def get_index_stats(self):
+        try:
+            stats = self.index.describe_index_stats()
+            logger.info(f"Vector DB stats: {stats}")
+            return stats
+        except Exception as e:
+            logger.error(f"Error getting index stats: {e}")
+            raise
+
+# Usage example remains the same

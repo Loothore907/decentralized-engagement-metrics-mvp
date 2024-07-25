@@ -83,3 +83,6 @@ ENV/
 data/raw/*
 data/processed/*
 models/fine_tuned/*
+*crash_*
+current_session.csv
+detailed_trades.csv
